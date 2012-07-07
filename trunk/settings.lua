@@ -149,12 +149,12 @@ settings =
 	{
 		["1"] =
 		{
-			["name"] = "Trivial",
+			["name"] = "Blocker",
 		},
 
 		["2"] =
 		{
-			["name"] = "Minor",
+			["name"] = "Critical",
 		},
 
 		["3"] =
@@ -164,12 +164,12 @@ settings =
 
 		["4"] =
 		{
-			["name"] = "Critical",
+			["name"] = "Minor",
 		},
 
 		["5"] =
 		{
-			["name"] = "Blocker",
+			["name"] = "Trivial",
 		},
 	},
 
