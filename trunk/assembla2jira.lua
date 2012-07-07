@@ -24,6 +24,8 @@ THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 --]]
 
+-- Version: 1.0
+
 -- =====================================================================
 -- =====================================================================
 --
@@ -752,7 +754,11 @@ function convertData(db, pd)
 				assert(jjCreateUser ~= nil)
 
 				xmlSetAttr (jjCreateUser, "username", jellyEscape(userMapping.username))
-				xmlSetAttr (jjCreateUser, "sendEmail", "false")
+				if (userMapping.send_email == true) then
+					xmlSetAttr (jjCreateUser, "sendEmail", "true")
+				else
+					xmlSetAttr (jjCreateUser, "sendEmail", "false")
+				end
 				xmlSetAttr (jjCreateUser, "email", jellyEscape(userMapping.email))
 				xmlSetAttr (jjCreateUser, "fullname", jellyEscape(userMapping.fullname))
 
@@ -1384,7 +1390,7 @@ function convertData(db, pd)
 
 					local statusMapping = getSettingsTable("statuses", status.name )
 
-					if (statusMapping ~= nil and statusMapping.workflowAction ~= nil) then
+					if (statusMapping ~= nil and statusMapping.workflow_action ~= nil) then
 						local assigneeUser = spaceMapping.convert_user or db.tables.users[space.payer_id]
 						assert(assigneeUser ~= nil)
 						local assigneeUserName = mapUserName(assigneeUser.login)
@@ -1565,13 +1571,13 @@ function convertData(db, pd)
 
 		local statusMapping = getSettingsTable("statuses", status.name )
 
-		if (statusMapping ~= nil and statusMapping.workflowAction ~= nil) then
+		if (statusMapping ~= nil and statusMapping.workflow_action ~= nil) then
 
 			local jjTransitionWorkflow = xmlCreateTag("jira:TransitionWorkflow")
 			assert(jjTransitionWorkflow ~= nil)
 
 			xmlSetAttr (jjTransitionWorkflow, "key", "${issueKey_" .. ticketId .. "}" )
-			xmlSetAttr (jjTransitionWorkflow, "workflowAction", jellyEscape(statusMapping.workflowAction) )
+			xmlSetAttr (jjTransitionWorkflow, "workflowAction", jellyEscape(statusMapping.workflow_action) )
 			if (statusMapping.resolution ~= nil) then
 				xmlSetAttr (jjTransitionWorkflow, "resolution", jellyEscape(statusMapping.resolution) )
 			end
