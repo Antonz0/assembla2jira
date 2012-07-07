@@ -1,6 +1,7 @@
 #!/usr/local/bin/lua
 
 --[[
+-- =====================================================================
 
 Copyright (c) 2012 Anton Breusov
 
@@ -22,9 +23,15 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
 THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+-- =====================================================================
 --]]
 
--- Version: 1.0
+-- =====================================================================
+--
+-- assembla2jira Version: 1.0
+-- http://code.google.com/p/assembla2jira/
+--
+-- =====================================================================
 
 -- =====================================================================
 -- =====================================================================
