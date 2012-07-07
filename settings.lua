@@ -6,6 +6,9 @@
 -- This file must be in a valid LUA script format.
 -- Read LUA Rederence Manual ( http://www.lua.org/manual/ )
 -- if you're not familiar with LUA scripts.
+-- 
+-- Read assembla2jira Documentation at the project site
+-- (http://code.google.com/p/assembla2jira/) for information on settings.
 --
 -- =====================================================================
 -- =====================================================================
