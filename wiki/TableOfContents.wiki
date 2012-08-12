@@ -1,4 +1,4 @@
-#summary Conversion Process
+#summary Table of Contents
 * [Installation]
 * [ConfigurationFile Configuration File]
 * [ConversionProcess Conversion Process]
