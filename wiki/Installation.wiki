@@ -3,9 +3,7 @@
 
 = Introduction =
 
-*assembla2jira* is written in [LUA] scripting language. To run it you need to prepare/install LUA language interpreter according to your operation system practices.
+*assembla2jira* is written in [http://www.lua.org/ LUA] scripting language. To run it you need to prepare/install LUA language interpreter according to your operation system practices.
 
 = Requirements =
   # *LUA interpreter*. *assembla2jira* is written and tested for Lua 5.1.x version. It should work under Lua 5.2.x but is not tested yet in this environment. Unix users should look in your OS package manager for a port/package of LUA. For Windows users I recommend [http://code.google.com/p/luaforwindows/ Lua for Windows (LfW)] package.
-
-
