@@ -7,6 +7,6 @@
 
 = Requirements =
   # *LUA interpreter*. *assembla2jira* is written and tested for Lua 5.1.x version. It should work under Lua 5.2.x but is not tested yet in this environment.
-  * Unix users should look in your OS package manager for a port/package of LUA.
-  * For Windows users I recommend [http://code.google.com/p/luaforwindows/ Lua for Windows (LfW)] package. Don't forget to add path to your LUA interpreter into PATH environment variable.
+    * Unix users should look in your OS package manager for a port/package of LUA.
+    * For Windows users I recommend [http://code.google.com/p/luaforwindows/ Lua for Windows (LfW)] package. Don't forget to add path to your LUA interpreter into PATH environment variable.
   # *JSON.lua* by [http://regex.info/blog/lua/json Jeffrey Friedl] - a pure LUA [http://json.org/ JSON] parser. We're including *MODIFIED* version of this library with our distribution, so do not use original version - it will not work. Link is included only for informational/copyright uses.
