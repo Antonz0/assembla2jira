@@ -23,6 +23,11 @@ After preparing and installing all components mentioned in *Requirements* sectio
 (or make it executable, then you can run it directly)
   * Windows:
 {{{
-<Path to LUA interpreter>\lua.exe assembla2jira.lua>
+<Path to LUA interpreter>\lua.exe assembla2jira.lua
 }}}
 (alternatively you can assign shell handler for .lua extension to be able to run LUA scripts directly).
+
+`assembla2jira.lua` should execute without errors and display Usage information:
+{{{
+Usage: assembla2jira.lua [-s <settings file>] <dump file> <output file>
+}}}
